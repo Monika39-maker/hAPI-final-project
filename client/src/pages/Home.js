@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import "./Home.css";
 import logo from "./logo.svg";
+import Header from "./header";
+
 
 export function Home() {
 	const [message, setMessage] = useState("Loading...");
@@ -26,6 +28,7 @@ export function Home() {
 	return (
 		<main role="main">
 			<div>
+				<Header />
 				<img
 					className="logo"
 					data-qa="logo"
