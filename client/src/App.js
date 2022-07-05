@@ -5,13 +5,17 @@
 
 import "./App.css";
 import AboutPratibhaNakshatra from "./AboutPratibhaNakshatra";
+import Home from "./Home";
 
 const App = () => (
 	// <Routes>
 	// 	<Route path="/" element={<Home />} />
 	// 	<Route path="/about/this/site" element={<About />} />
 	// </Routes>
-	<AboutPratibhaNakshatra />
+	<>
+		<Home />
+		<AboutPratibhaNakshatra />
+	</>
 );
 
 export default App;
