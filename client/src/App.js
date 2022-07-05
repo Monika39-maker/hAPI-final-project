@@ -7,7 +7,7 @@ import Home from "./Home";
 const App = () => (
 	<Routes>
 		<Route path="/" element={<Home />} />
-		<Route path="/about" element={		<AboutPratibhaNakshatra />} />
+		<Route path="/about" element={<AboutPratibhaNakshatra />} />
 	</Routes>
 );
 
