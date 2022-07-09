@@ -1,12 +1,10 @@
+import Header from "../../header";
+import Nav from "../../nav";
 const About = () => (
 	<main role="main">
 		<div>
-			<h1>About</h1>
-			<p>
-				Starter kit for full-stack JavaScript projects. For more information,
-				see the wiki:
-			</p>
-			<a href="https://github.com/textbook/starter-kit/wiki">Wiki</a>
+			<Header />
+			<Nav />
 		</div>
 	</main>
 );

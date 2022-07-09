@@ -1,5 +1,6 @@
-//import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+// import { useEffect, useState } from "react";
+// import { Link } from "react-router-dom";
+
 import homepageImage from "../images/homepage-image.jpeg";
 
 export function Home() {

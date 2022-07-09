@@ -4,6 +4,8 @@ import AboutPratibhaNakshatra from "./AboutPratibhaNakshatra";
 import Video from "./Video";
 import Home from "./pages/Home";
 
+
+
 const App = () => (
 <>
 	<Routes>
