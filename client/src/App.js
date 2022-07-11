@@ -5,7 +5,7 @@ import Donations from "./Donations";
 import ThankYou from "./ThankYou";
 import Video from "./Video";
 import Home from "./pages/Home";
-
+import Contact from "./Contact";
 
 
 const App = () => (
@@ -15,6 +15,7 @@ const App = () => (
 		<Route path="/about" element={<AboutPratibhaNakshatra />} />
 		<Route path="/donations" element={<Donations />} />
 		<Route path="/thank-you" element={<ThankYou /> }  />
+		<Route path="/contact" element={<Contact />} />
 	</Routes>
   <Video />
   </>
