@@ -1,14 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Contact() {
+const [submitted, setSubmitted] = useState(false);
+
+function submitForm() {
+    setSubmitted(true);
+}
+
+if (submitted) {
+    return (
+			<>
+				<div>Thank you!</div>
+				<div>We'll be in touch soon.</div>
+			</>
+		);
+}
+
+
     return (
 			<>
 				<div>Contact us</div>
 				<div>
 					<form
 						id="contact-form"
-						// onSubmit={}
-						method="POST"
+                        onSubmit={submitForm}
+						// method="POST"
 					>
 						<div className="form-group">
 							<label htmlFor="name">Name: </label>
