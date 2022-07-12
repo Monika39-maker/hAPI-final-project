@@ -1,7 +1,3 @@
-import http from "http";
-
-import app from "./app";
-
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -16,7 +12,6 @@ const contactMessage = {
 	message: "Eat my shorts!",
 };
 
-
 const port = parseInt(process.env.PORT || "3000");
 
 app.get("/", function (req, res) {
@@ -26,7 +21,6 @@ app.get("/", function (req, res) {
 app.post("/api/new-contact", function (req, res) {
 	res.json(contactMessage);
 });
-
 
 app.listen(port, () => {
 	console.log(`http://localhost:${port}`);
