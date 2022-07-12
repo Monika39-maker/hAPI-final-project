@@ -16,14 +16,13 @@ if (submitted) {
 		);
 }
 
-
     return (
 			<>
 				<div>Contact us</div>
 				<div>
 					<form
 						id="contact-form"
-                        onSubmit={submitForm}
+						onSubmit={submitForm}
 						// method="POST"
 					>
 						<div className="form-group">
@@ -33,6 +32,7 @@ if (submitted) {
 								name="name"
 								className="form-control"
 								placeholder="type name here"
+								required
 							/>
 						</div>
 						<div className="form-group">
@@ -42,6 +42,7 @@ if (submitted) {
 								name="email"
 								placeholder="type email here"
 								className="form-control"
+								required
 							/>
 						</div>
 						<div className="form-group">
@@ -50,6 +51,7 @@ if (submitted) {
 								className="form-control"
 								rows="5"
 								placeholder="type message here"
+								required minLength="4"
 							></textarea>
 						</div>
 						<button type="submit">Submit</button>
