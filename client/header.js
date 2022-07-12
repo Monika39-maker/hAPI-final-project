@@ -1,9 +1,9 @@
 import React from "react";
 import Nav from "./nav";
 
-function Header() {
+function Header(props) {
   return (
-    <div>
+    <div style={{ backgroundColor: props.backgroundColor, color: props.color, padding:props.padding }}>
         <img src="https://www.pratibhanakshatra.org/public/storage/setting/1594904931pratibha.jpg" alt="logo" />
         <Nav />
         <div>
@@ -13,5 +13,6 @@ function Header() {
 
   );
 }
+
 
 export default Header;
