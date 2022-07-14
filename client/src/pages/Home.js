@@ -1,7 +1,11 @@
 // import { useEffect, useState } from "react";
 // import { Link } from "react-router-dom";
+import Header from "../../header.js";
+import "./home.css";
+import Footer from "../footer.js";
 
 import homepageImage from "../images/homepage-image.jpeg";
+// import bgVideo from "../videos/bg-video.mp4";
 
 export function Home() {
 	// const [message, setMessage] = useState("Loading...");
@@ -25,7 +29,13 @@ export function Home() {
 	return (
 		<main role="main">
 			<div>
+				<Header />
 				<h1>Pratibha Nakshatra</h1>
+				{/* <div>
+					<video src={bgVideo} autoPlay loop muted />
+				</div> */}
+
+
 				<img src={homepageImage} style={{ width: "80%" }} alt="placeholder" />
 				<p>
 					Pratibha Nakshatra is the fusion of equality, co-existence, respect,
@@ -39,6 +49,7 @@ export function Home() {
 					preserve, maintain and handover to their newer generation.
 				</p>
 			</div>
+			<Footer />
 		</main>
 	);
 }
