@@ -3,7 +3,7 @@ import "./App.css";
 import AboutPratibhaNakshatra from "./AboutPratibhaNakshatra";
 import Donations from "./Donations";
 import ThankYou from "./ThankYou";
-import Video from "./Video";
+import Video from "./components/Video";
 import Home from "./pages/Home";
 
 
