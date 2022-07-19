@@ -3,14 +3,14 @@ import TextHero from "../client/src/components/TextHero.js";
 export default {
     title: "Components/TextHero",
     component: TextHero,
-    argTypes: {
-        title: { control: "string" },
-        subtitle: { control: "string", defaultValue: "20" },
-        link: { control: "string" },
-        buttonText:{ control: "string" },
-        variant:{ control: "string" },
+    // argTypes: {
+    //     title: { control: "string" },
+    //     subtitle: { control: "string", defaultValue: "20" },
+    //     link: { control: "string" },
+    //     buttonText:{ control: "string" },
+    //     variant:{ control: "string" },
 
-    },
+    // },
 };
 
 
