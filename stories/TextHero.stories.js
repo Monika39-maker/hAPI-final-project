@@ -25,4 +25,28 @@ export default {
     variant:"red",
 
  }
+ 
+ export const YellowVariant = Template.bind({})
+ YellowVariant.args = {
+    title: "This is a text Hero",
+    subtitle: "In this subtitle you can write a longer text",
+    link: "https://google.com",
+    buttonText:"Open Google",
+    variant:"yellow",
+
+ }
+ export const BlueVarient = Template.bind({})
+ BlueVarient.args = {
+    title: "This is a text Hero",
+    subtitle: "In this subtitle you can write a longer text",
+    link: "https://google.com",
+    buttonText:"Open Google",
+    variant:"blue",
+
+ }
+ export const TitleOnly = Template.bind({})
+ TitleOnly.args = {
+    title: "This is a text Hero",
+
+ }
 
