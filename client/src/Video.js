@@ -1,15 +1,16 @@
-import React from "react";
-import Skyscraper from "./images/PlaceholderImage.jpeg";
+import React, { useState } from "react";
+// import Skyscrapers from "./images/Skyscrapers.mp4";
 
-const Video = (props) => {
-  console.log(props);
+const Video = () => {
+
   return (
     <div className="videoWithOverlay">
-      <img className="video" src={Skyscraper} />
-         {/* autoPlay loop muted /> */}
+      {/* <video className="video" autoPlay loop muted>
+        <source src={Skyscrapers} type="video/mp4" />
+      </video>
       <div className="textOverlay">
         <p>Placeholder Text for Video Component Overlay</p>
-      </div>
+      </div> */}
     </div>
   );
 };
