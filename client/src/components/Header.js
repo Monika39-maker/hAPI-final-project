@@ -1,9 +1,9 @@
 import React from "react";
-import Nav from "./nav";
+import Nav from "./Nav";
 
-function Header(props) {
+function Header() {
   return (
-    <div style={{ backgroundColor: props.backgroundColor, color: props.color, padding:props.padding }}>
+    <div>
         <img src="https://www.pratibhanakshatra.org/public/storage/setting/1594904931pratibha.jpg" alt="logo" />
         <Nav />
         <div>
