@@ -18,7 +18,7 @@ export default {
 
  export const Default = Template.bind({})
  Default.args = {
-    title: "This is a text Hero",
+    title: "Title",
     subtitle: "In this subtitle you can write a longer text",
     link: "https://google.com",
     buttonText:"Open Google",

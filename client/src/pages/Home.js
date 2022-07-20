@@ -4,6 +4,7 @@ import Header from "../../header.js";
 import "./home.css";
 import Footer from "../footer.js";
 
+
 import homepageImage from "../images/homepage-image.jpeg";
 // import bgVideo from "../videos/bg-video.mp4";
 
@@ -34,7 +35,6 @@ export function Home() {
 				{/* <div>
 					<video src={bgVideo} autoPlay loop muted />
 				</div> */}
-
 
 				<img src={homepageImage} style={{ width: "80%" }} alt="placeholder" />
 				<p>
