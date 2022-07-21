@@ -1,7 +1,9 @@
 :root {
-    --story-blue: rgb(12, 65, 144);
+    --story-blue: #171740;
     --story-red: rgb(213, 30, 81);
-    --story-gold: rgb(255, 191, 0);
+    --story-gold: #FCAF3B;
+    --story-white: #FFF;
+    --story-green: #88da62;
 }
 
 .placeholderImg {
@@ -37,52 +39,56 @@
   margin-bottom: 2em;
 }
 /* ------------CSS for the stories---start---------- */
-/* RED  */
-.text-hero-red {
-  background: rgb(213, 30, 81);
-  width: 350px;
-  min-height: 350px;
+/* common  */
+.text-hero-red, .text-hero-yellow, .text-hero-blue {
+  width: 20vw;
+  height: 15vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
 }
 
-.text-hero-title-red {
-  color: var(--story-gold);
+.text-hero-title-red, .text-hero-title-yellow, .text-hero-title-blue {
   font-size: 1.5em;
 }
-
-.text-hero-subtitle-red {
-  color: #fff;
-  font-size: 0.9em;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-wrap: break-word; 
+.text-hero-subtitle-red, .text-hero-subtitle-yellow, .text-hero-subtitle-blue {
+    font-size: 0.9em;
+    width: 300px;
+    text-align: center;
+    overflow-wrap: break-word;
 }
-
-.text-hero-button-red {
-  background: var(--story-blue);
+.text-hero-button-red, .text-hero-button-yellow, .text-hero-button-blue {
   padding: 5px;
-  color: #fff;
   border-radius: 6px;
   font-size: 1em;
   cursor: pointer;
   text-decoration: none;
 }
 
+/* RED  */
+.text-hero-red {
+  background: var(--story-red);  
+}
+
+.text-hero-title-red {
+  color: var(--story-gold); 
+}
+
+.text-hero-subtitle-red {
+  color: var(--story-white);
+ 
+}
+
+.text-hero-button-red {
+  background: var(--story-blue);
+  color: var(--story-white);
+}
+
 /* Yellow  */
 .text-hero-yellow {
   background: var(--story-gold);
-  width: 350px;
-  min-height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+
 }
 
 .text-hero-title-yellow {
@@ -91,34 +97,19 @@
 }
 
 .text-hero-subtitle-yellow {
-  color: #000;
-  font-size: 0.9em;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-wrap: break-word; 
+  color: var(--story-blue);
+  
 }
 
 .text-hero-button-yellow {
   background: var(--story-blue);
-  padding: 5px;
-  color: #fff;
-  border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
-  text-decoration: none;
+  color: var(--story-white);
 }
 
 /* Blue  */
 .text-hero-blue {
   background: var(--story-blue);
-  width: 350px;
-  min-height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+
 }
 
 .text-hero-title-blue {
@@ -127,21 +118,11 @@
 }
 
 .text-hero-subtitle-blue {
-  color: #fff;
-  font-size: 0.9em;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-wrap: break-word; 
+  color: var(--story-white); 
 }
 
 .text-hero-button-blue {
   background: var(--story-gold);
-  padding: 5px;
-  color: #000;
-  border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
-  text-decoration: none;
+  color: var(--story-blue);
 }
 /* -----CSS for the stories-------end-------------------- */
