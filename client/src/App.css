@@ -66,6 +66,19 @@
   text-decoration: none;
 }
 
+/* title only  */
+.text-hero-title-only {
+  background: #FCAF3B;
+  color: var(--story-blue);
+  font: 1em sans-serif;
+  width: 20vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* RED  */
 .text-hero-red {
   background: var(--story-red);  
