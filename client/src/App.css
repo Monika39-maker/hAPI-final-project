@@ -158,9 +158,8 @@
 .video {
   /* margin-left: auto; */
   position: relative;
-  top: 0;
+  bottom: 0;
   left: 0;
-  background: red;
 }
 .video-hero-text-overlay p{
   margin-left: auto;
@@ -169,18 +168,19 @@
   left: 10%;
   overflow-wrap: break-word;
   width: 50%;
-  height: auto;
+  height: 100%;
   font-size: 1rem;
   text-align: center;
   color: #fff;
   /* z-index: 6; */
 }
 .video-hero-text-overlay h3{
-  position: fixed;
+  position: sticky;
   bottom: 0;
+  padding: 15px 0 15px 0;
   overflow-wrap: break-word;
   width: 100%;
-  height: 100px;
+  /* height: 100px; */
   font-size: 1rem;
   text-align: center;
   color: #fff;

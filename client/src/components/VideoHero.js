@@ -5,7 +5,7 @@ import "../App.css";
 function VideoHero({ src, height, width, subtitle, textOverlay }) {
   return (
     <div style={{ width:`${width}%`, height:`${height}%` }} className="video-hero-text-overlay">
-        <div className="video" style={{ width:"100%", height:"100%" }} >
+        <div>
             <video autoPlay muted loop width="100%" height="100%">
             <source src={src} type="video/mp4" />
             <source src={src} type="video/ogg" />
