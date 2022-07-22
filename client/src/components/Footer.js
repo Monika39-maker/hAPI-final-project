@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import Nav from "../nav";
+import Nav from "./Nav";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 
