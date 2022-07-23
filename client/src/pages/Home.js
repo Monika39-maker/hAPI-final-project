@@ -1,40 +1,13 @@
-// import { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
-import Header from "../components/Header.js";
 import "./home.css";
-import Footer from "../components/Footer.js";
-import Newsletter from "../components/Newsletter";
 
+import Newsletter from "../components/Newsletter";
 import homepageImage from "../images/homepage-image.jpeg";
-// import bgVideo from "../videos/bg-video.mp4";
 
 export function Home() {
-	// const [message, setMessage] = useState("Loading...");
-
-	// useEffect(() => {
-	// 	fetch("/api")
-	// 		.then((res) => {
-	// 			if (!res.ok) {
-	// 				throw new Error(res.statusText);
-	// 			}
-	// 			return res.json();
-	// 		})
-	// 		.then((body) => {
-	// 			setMessage(body.message);
-	// 		})
-	// 		.catch((err) => {
-	// 			console.error(err);
-	// 		});
-	// }, []);
-
 	return (
 		<main role="main">
 			<div>
-				<Header />
 				<h1>Pratibha Nakshatra</h1>
-				{/* <div>
-					<video src={bgVideo} autoPlay loop muted />
-				</div> */}
 
 				<img src={homepageImage} style={{ width: "80%" }} alt="placeholder" />
 				<p>
@@ -50,7 +23,6 @@ export function Home() {
 				</p>
 			</div>
 			<Newsletter />
-			<Footer />
 		</main>
 	);
 }

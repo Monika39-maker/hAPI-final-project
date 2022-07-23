@@ -1,10 +1,7 @@
-import Header from "../../header";
-import Nav from "../../nav";
 const About = () => (
 	<main role="main">
 		<div>
-			<Header />
-			<Nav />
+			<h1>Pratibha Nakshatra</h1>
 		</div>
 	</main>
 );
