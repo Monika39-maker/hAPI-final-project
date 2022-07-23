@@ -212,3 +212,17 @@
 .signup-button {
   height: 3em;
 }
+
+.image-card {
+  background: var(--story-gold);
+  width: 20%;
+  height: auto;
+  text-align: center;
+  padding: 5px;
+  color: var(--story-white)
+}
+
+.image-card img{
+  width: 90%;
+  height: 80%;
+}
