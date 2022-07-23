@@ -2,7 +2,6 @@ import React from "react";
 import Nav from "./Nav";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
-
 export default function Footer() {
   return (
     <div>
