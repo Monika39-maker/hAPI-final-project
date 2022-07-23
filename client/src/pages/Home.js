@@ -3,8 +3,7 @@
 import Header from "../components/Header.js";
 import "./home.css";
 import Footer from "../components/Footer.js";
-
-
+import Newsletter from "../components/Newsletter";
 
 import homepageImage from "../images/homepage-image.jpeg";
 
@@ -48,6 +47,7 @@ export function Home() {
 					preserve, maintain and handover to their newer generation.
 				</p>
 			</div>
+			<Newsletter />
 			<Footer />
 		</main>
 	);
