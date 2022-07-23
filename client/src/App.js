@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import AboutPratibhaNakshatra from "./AboutPratibhaNakshatra";
 import Donations from "./Donations";
-import ThankYou from "./ThankYou";
+import ThankYou from "./pages/ThankYou";
 import Video from "./components/Video";
 import Home from "./pages/Home";
 import Contact from "./Contact";
