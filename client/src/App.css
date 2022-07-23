@@ -194,3 +194,21 @@
 
 
 /* -----CSS for the stories-------end-------------------- */
+
+.newsletter-box {
+  display: flex;
+  flex-direction: column;
+  height: 15em;
+  background-color: blue;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.email-form {
+  height: 3
+  em;
+}
+
+.signup-button {
+  height: 3em;
+}
