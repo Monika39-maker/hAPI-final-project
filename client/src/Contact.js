@@ -7,11 +7,6 @@ function submitForm() {
   setSubmitted(true);
 }
 
-function submitForm() {
-	setSubmitted(true);
-}
-
-
 if (submitted) {
 	return (
 		<>
