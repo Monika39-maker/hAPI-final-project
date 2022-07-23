@@ -6,7 +6,6 @@ import Footer from "../components/Footer.js";
 import Newsletter from "../components/Newsletter";
 
 import homepageImage from "../images/homepage-image.jpeg";
-// import bgVideo from "../videos/bg-video.mp4";
 
 export function Home() {
 	// const [message, setMessage] = useState("Loading...");
@@ -35,7 +34,13 @@ export function Home() {
 				{/* <div>
 					<video src={bgVideo} autoPlay loop muted />
 				</div> */}
-
+				<VideoHero
+					height="100"
+					src="https://player.vimeo.com/progressive_redirect/playback/694704491/rendition/360p?loc=external&oauth2_token_id=1027659655&signature=6f4425e6cbc3e6c9dfe7a01f60ab993bcf297393152794a8aa9f409173b78244"
+					subtitle="Optional subtitle"
+					textOverlay="Text that goes over the video"
+					width="100"
+				/>
 				<img src={homepageImage} style={{ width: "80%" }} alt="placeholder" />
 				<p>
 					Pratibha Nakshatra is the fusion of equality, co-existence, respect,
