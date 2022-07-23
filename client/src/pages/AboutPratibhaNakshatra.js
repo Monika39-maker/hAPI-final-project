@@ -1,5 +1,5 @@
 import React from "react";
-import Placeholder from "./images/PlaceholderImage.jpeg";
+import Placeholder from "../images/PlaceholderImage.jpeg";
 
 const AboutPratibhaNakshatra = () => {
   return (
