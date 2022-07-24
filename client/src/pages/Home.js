@@ -8,7 +8,7 @@ export function Home() {
 	return (
 		<main role="main">
 			<VideoHero
-				src="https://player.vimeo.com/video/721181549?h=545dd25efa&title=0&byline=0&portrait=0"
+				src="http://localhost:3100/public/videohero.mp4"
 				height="50"
 				width="100"
 				textOverlay="Pratibha Nakshatra"
