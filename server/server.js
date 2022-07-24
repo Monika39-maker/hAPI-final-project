@@ -1,9 +1,15 @@
+const path = require("path");
+
 const express = require("express");
-const cors = require("cors");
+// const cors = require("cors");
 const app = express();
 
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
+
+console.log("__dirname", path.join(__dirname, "public"));
+
+app.use("/public", express.static(path.join(__dirname, "public")));
 
 const contactMessage = {
 	id: 0,
@@ -12,7 +18,7 @@ const contactMessage = {
 	message: "Eat my shorts!",
 };
 
-const emails = require("./emails.json");
+const emails = require("./emails.js");
 
 const port = parseInt(process.env.PORT || "3000");
 
@@ -32,10 +38,10 @@ app.post("/api/email", (req, res) => {
 	let emailsList = req.body;
 	let newEmail = req.body.email;
 	emails.push({
-		"email": newEmail
+		"email": newEmail,
 	});
 	res.send(emailsList).status(200);
-})
+});
 
 app.listen(port, () => {
 	console.log(`http://localhost:${port}`);
