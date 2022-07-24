@@ -29,7 +29,6 @@ export function Home() {
 	return (
 		<main role="main">
 			<div>
-				<Header />
 				<h1>Pratibha Nakshatra</h1>
 				{/* <div>
 					<video src={bgVideo} autoPlay loop muted />
@@ -48,7 +47,6 @@ export function Home() {
 				</p>
 			</div>
 			<Newsletter />
-			<Footer />
 		</main>
 	);
 }
