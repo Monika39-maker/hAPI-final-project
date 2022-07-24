@@ -3,7 +3,6 @@ import "./App.css";
 import AboutPratibhaNakshatra from "./AboutPratibhaNakshatra";
 import Donations from "./Donations";
 import ThankYou from "./pages/ThankYou";
-import Video from "./components/Video";
 import Home from "./pages/Home";
 import Contact from "./Contact";
 
@@ -17,7 +16,6 @@ const App = () => (
 		<Route path="/thank-you" element={<ThankYou /> }  />
 		<Route path="/contact" element={<Contact />} />
 	</Routes>
-  <Video />
   </>
 );
 
