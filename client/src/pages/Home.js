@@ -1,39 +1,19 @@
-// import { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
-import Header from "../components/Header.js";
-import "./home.css";
-import Footer from "../components/Footer.js";
 import Newsletter from "../components/Newsletter";
 import VideoHero from "../components/VideoHero.js";
-
 import homepageImage from "../images/homepage-image.jpeg";
 
 export function Home() {
-	// const [message, setMessage] = useState("Loading...");
-
-	// useEffect(() => {
-	// 	fetch("/api")
-	// 		.then((res) => {
-	// 			if (!res.ok) {
-	// 				throw new Error(res.statusText);
-	// 			}
-	// 			return res.json();
-	// 		})
-	// 		.then((body) => {
-	// 			setMessage(body.message);
-	// 		})
-	// 		.catch((err) => {
-	// 			console.error(err);
-	// 		});
-	// }, []);
-
 	return (
 		<main role="main">
 			<div>
+				<VideoHero
+					height="100"
+					src="https://player.vimeo.com/progressive_redirect/playback/694704491/rendition/360p?loc=external&oauth2_token_id=1027659655&signature=6f4425e6cbc3e6c9dfe7a01f60ab993bcf297393152794a8aa9f409173b78244"
+					subtitle="Optional subtitle"
+					textOverlay="Text that goes over the video"
+					width="100"
+				/>
 				<h1>Pratibha Nakshatra</h1>
-				{/* <div>
-					<video src={bgVideo} autoPlay loop muted />
-				</div> */}
 				<img src={homepageImage} style={{ width: "80%" }} alt="placeholder" />
 				<p>
 					Pratibha Nakshatra is the fusion of equality, co-existence, respect,
