@@ -5,6 +5,7 @@ import "./home.css";
 import Footer from "../components/Footer.js";
 import Newsletter from "../components/Newsletter";
 import VideoHero from "../components/VideoHero.js";
+import TextHero from "../components/TextHero.js";
 
 import homepageImage from "../images/homepage-image.jpeg";
 
@@ -47,6 +48,13 @@ export function Home() {
 					preserve, maintain and handover to their newer generation.
 				</p>
 			</div>
+			<TextHero
+				buttonText="Open Google"
+				link="https://google.com"
+				subtitle="In this subtitle you can write a longer text"
+				title="Title"
+				variant="red"
+			/>
 			<Newsletter />
 		</main>
 	);
