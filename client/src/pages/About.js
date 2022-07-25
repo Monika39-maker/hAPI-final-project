@@ -1,5 +1,4 @@
 import React from "react";
-import Placeholder from "./images/PlaceholderImage.jpeg";
 import Contact from "../Contact";
 
 const About = () => {
