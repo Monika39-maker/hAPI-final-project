@@ -4,6 +4,7 @@ import Header from "../components/Header.js";
 import "./home.css";
 import Footer from "../components/Footer.js";
 import Newsletter from "../components/Newsletter";
+import VideoHero from "../components/VideoHero.js";
 
 import homepageImage from "../images/homepage-image.jpeg";
 
