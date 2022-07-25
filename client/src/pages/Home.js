@@ -48,13 +48,6 @@ export function Home() {
 					preserve, maintain and handover to their newer generation.
 				</p>
 			</div>
-			<TextHero
-				buttonText="Open Google"
-				link="https://google.com"
-				subtitle="In this subtitle you can write a longer text"
-				title="Title"
-				variant="red"
-			/>
 			<Newsletter />
 		</main>
 	);
