@@ -1,6 +1,8 @@
 import Newsletter from "../components/Newsletter";
 import VideoHero from "../components/VideoHero.js";
 import ImageCard from "../components/ImageCard.js";
+import TextHero from "../components/TextHero.js";
+
 
 export function Home() {
 	return (
