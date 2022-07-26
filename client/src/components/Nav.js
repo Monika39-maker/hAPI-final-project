@@ -12,7 +12,7 @@ export default function Nav() {
 			<li>
 				<a href="/Home">
           {/* src needs to be fetched from database  */}
-					<img src="https://www.pratibhanakshatra.org/public/storage/setting/1594904931pratibha.jpg" />
+					<img className="logo" src="https://www.pratibhanakshatra.org/public/storage/setting/1594904931pratibha.jpg" />
 				</a>
 			</li>
 			<li>
