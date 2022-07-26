@@ -38,6 +38,17 @@
   margin-top: 2em;
   margin-bottom: 2em;
 }
+
+footer {
+  background: var(--story-blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer >.logo {
+  display: hidden
+}
 /* ------------CSS for the stories---start---------- */
 /* common  */
 .text-hero-red, .text-hero-yellow, .text-hero-blue {
