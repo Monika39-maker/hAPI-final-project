@@ -16,7 +16,7 @@ export function Home() {
 			<TextHero
 				title="The Star Talent"
 				subtitle="A fusion of equality, co-existence, respect, pure soul and consciousness of origin"
-				variant="yellow"
+				variant="red"
 			/>
 			<img className="video" src={placeholderImage} alt="" />
 			<TextHero
