@@ -3,7 +3,6 @@ import "./App.css";
 import About from "./pages/About";
 import Donations from "./Donations";
 import ThankYou from "./pages/ThankYou";
-import Video from "./components/Video";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./Contact";
