@@ -41,8 +41,9 @@
 /* ------------CSS for the stories---start---------- */
 /* common  */
 .text-hero-red, .text-hero-yellow, .text-hero-blue {
-  width: 25%;
-  height: 15vw;
+  width: 100%;
+  height: auto;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -211,4 +212,18 @@
 
 .signup-button {
   height: 3em;
+}
+
+.image-card {
+  background: var(--story-gold);
+  width: 20%;
+  height: auto;
+  text-align: center;
+  padding: 5px;
+  color: var(--story-white)
+}
+
+.image-card img{
+  width: 90%;
+  height: 80%;
 }
