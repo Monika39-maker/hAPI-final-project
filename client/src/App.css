@@ -41,8 +41,9 @@
 /* ------------CSS for the stories---start---------- */
 /* common  */
 .text-hero-red, .text-hero-yellow, .text-hero-blue {
-  width: 25%;
-  height: 15vw;
+  width: 100%;
+  height: auto;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
