@@ -1,8 +1,10 @@
+import "./home.css";
+import TextHero from "../components/TextHero";
 import Newsletter from "../components/Newsletter";
-import VideoHero from "../components/VideoHero.js";
 import ImageCard from "../components/ImageCard.js";
 import TextHero from "../components/TextHero.js";
 import ImageHero from "../components/ImageHero.js";
+
 
 
 export function Home() {
@@ -13,10 +15,6 @@ export function Home() {
 				title="Pratibha Nakshtra"
 			/>
 			<Newsletter />
-			<img
-				src="https://www.pratibhanakshatra.org/public/storage/events/1595505312pro2.png"
-				alt=""
-			/>
 		</main>
 	);
 }
