@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "./Nav";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import "../App.css";
 
 export default function Footer() {
   return (

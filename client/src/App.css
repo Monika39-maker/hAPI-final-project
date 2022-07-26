@@ -42,13 +42,15 @@
 footer {
   background: var(--story-blue);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-footer >.logo {
-  display: hidden
+
+footer > nav > li:nth-of-type(3) {
+  display: none;
 }
+
 /* ------------CSS for the stories---start---------- */
 /* common  */
 .text-hero-red, .text-hero-yellow, .text-hero-blue {
