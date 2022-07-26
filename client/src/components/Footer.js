@@ -1,14 +1,15 @@
 import React from "react";
 import Nav from "./Nav";
 import { FaFacebookF } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
 export default function Footer() {
   return (
-		<div>
+		<Footer>
 			<p>MENU</p>
 			<Nav />
 			<p>Pratibha Nakshtra © 2022</p>
 			<div>
-				<a href="">
+				<a href="https://www.facebook.com/prativanakshatra" target="_blank" rel="noreferrer">
 					<FaInstagramSquare />
 				</a>
 				<a
@@ -19,6 +20,6 @@ export default function Footer() {
 					<FaFacebookF />
 				</a>
 			</div>
-		</div>
+		</Footer>
 	);
 }
