@@ -1,5 +1,4 @@
 import React from "react";
-import Contact from "../Contact";
 
 const About = () => {
 	return (
@@ -30,7 +29,8 @@ const About = () => {
 				condimentum vitae sapien pellentesque habitant morbi. Sed augue lacus
 				viverra vitae congue. Purus in mollis nunc sed id semper.
 			</p>
-			<Contact />
+
+
 		</div>
 	);
 };
