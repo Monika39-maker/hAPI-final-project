@@ -1,5 +1,4 @@
 import "./home.css";
-import VideoHero from "../components/VideoHero";
 import TextHero from "../components/TextHero";
 import placeholderImage from "../images/homepage-image.jpeg";
 import Newsletter from "../components/Newsletter";
