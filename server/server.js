@@ -1,23 +1,42 @@
-import http from "http";
+const express = require("express");
+const cors = require("cors");
+const app = express();
 
-import app from "./app";
+app.use(cors());
+app.use(express.json());
 
+const contactMessage = {
+	id: 0,
+	name: "Bart Simpson",
+	email: "bart@springfield.com",
+	message: "Eat my shorts!",
+};
 
-// import { connectDb, disconnectDb } from "./db";
+const emails = require("./emails.json");
 
 const port = parseInt(process.env.PORT || "3000");
 
-const server = http.createServer(app);
-
-server.on("listening", () => {
-	const addr = server.address();
-	const bind = typeof addr === "string" ? `pipe ${addr}` : `port ${addr.port}`;
-	// eslint-disable-next-line no-console
-	console.log(`Listening on ${bind}`);
+app.get("/", function (req, res) {
+	res.json("Hello World");
 });
 
-// psql connection handling - currently unused
-// process.on("SIGTERM", () => server.close(() => disconnectDb()));
-// connectDb().then(() => server.listen(port));
+app.post("/api/new-contact", function (req, res) {
+	res.json(contactMessage);
+});
 
-server.listen(port);
+app.get("/api/email", (req, res) => {
+	res.send(emails);
+});
+
+app.post("/api/email", (req, res) => {
+	let emailsList = req.body;
+	let newEmail = req.body.email;
+	emails.push({
+		"email": newEmail
+	});
+	res.send(emailsList).status(200);
+})
+
+app.listen(port, () => {
+	console.log(`http://localhost:${port}`);
+});
