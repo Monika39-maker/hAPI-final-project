@@ -46,7 +46,9 @@ export default {
  }
  export const TitleOnly = Template.bind({})
  TitleOnly.args = {
-    subtitle: "This is a text Hero",
+   title: "Add your title here",
+    subtitle1: "This is a text Hero",
+    subtitle2: "This is a text Hero",
     variant:"title-only"
 
  }
