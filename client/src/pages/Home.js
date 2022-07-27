@@ -1,8 +1,5 @@
-import "./home.css";
 import TextHero from "../components/TextHero";
 import Newsletter from "../components/Newsletter";
-import ImageCard from "../components/ImageCard.js";
-import TextHero from "../components/TextHero.js";
 import ImageHero from "../components/ImageHero.js";
 
 
@@ -15,6 +12,13 @@ export function Home() {
 				title="Pratibha Nakshtra"
 			/>
 			<Newsletter />
+			<TextHero
+				buttonText="Open Google"
+				link="https://google.com"
+				subtitle="In this subtitle you can write a longer text"
+				title="Title"
+				variant="red"
+			/>
 		</main>
 	);
 }
