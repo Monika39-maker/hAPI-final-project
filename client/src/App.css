@@ -103,19 +103,20 @@ a {
 /* title only  */
 .text-hero-title-only {
   background: var(--story-white);
-  font: 1em sans-serif;
   width: 100%;
-  height: 15vh;
+  height: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .text-hero-title-title-only {
   color: var(--story-blue)
 }
 .text-hero-subtitle-title-title-only {
-  font-size: 0.7rem;
+  font-size: 0.5em;
+  font-weight: 100;
 }
 
 /* RED  */
