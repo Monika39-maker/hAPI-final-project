@@ -2,9 +2,11 @@ import React from "react";
 import Nav from "./Nav";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+
+
 export default function Footer() {
   return (
-		<Footer>
+		<footer>
 			<p>MENU</p>
 			<Nav />
 			<p>Pratibha Nakshtra © 2022</p>
@@ -20,6 +22,6 @@ export default function Footer() {
 					<FaFacebookF />
 				</a>
 			</div>
-		</Footer>
+    </footer>
 	);
 }

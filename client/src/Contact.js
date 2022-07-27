@@ -3,27 +3,34 @@ import React, { useState } from "react";
 function Contact() {
 const [submitted, setSubmitted] = useState(false);
 
-const [name, setName] = useState("");
-const [email, setEmail] = useState("");
-const [message, setMessage] = useState("");
+const [formDetails, setFormDetails] =  useState([{
+	name: "",
+	email: "",
+	message: "",
+}]);
 
-const contactInfo = [];
+const handleChange = (input) => (e) => {
+	setFormDetails({ ...formDetails, [input]: e.target.value });
+};
 
-function submitForm(event) {
+
+const submitForm = async(event) => {
 	event.preventDefault();
-	// console.log(name);
-	// console.log(email);
-	// console.log(message);
-	contactInfo.push({ name: name, email: email, message: message });
 
-	console.log(contactInfo);
+	try {
+        const body = formDetails;
 
-	setName("");
-	setEmail("");
-	setMessage("");
+        const response = await fetch("http://localhost:3000/api/new-contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(body),
+        });
+    } catch (error) {
+        console.error(error.message);
+    }
 
-	//setSubmitted(true);
-}
+    setSubmitted(true);
+};
 
 if (submitted) {
 	return (
@@ -38,11 +45,7 @@ if (submitted) {
 		<>
 			<div>Contact us</div>
 			<div>
-				<form
-					id="contact-form"
-					onSubmit={submitForm}
-					// method="POST"
-				>
+				<form id="contact-form" onSubmit={submitForm}>
 					<div className="form-group">
 						<label htmlFor="name">Name: </label>
 						<input
@@ -50,8 +53,8 @@ if (submitted) {
 							name="name"
 							className="form-control"
 							placeholder="type name here"
-							value={name}
-							onChange={(e) => setName(e.target.value)}
+							value={formDetails.name}
+							onChange={handleChange("name")}
 							required
 						/>
 					</div>
@@ -62,8 +65,8 @@ if (submitted) {
 							name="email"
 							placeholder="type email here"
 							className="form-control"
-							value={email}
-							onChange={(e) => setEmail(e.target.value)}
+							value={formDetails.email}
+							onChange={handleChange("email")}
 							required
 						/>
 					</div>
@@ -73,10 +76,10 @@ if (submitted) {
 							className="form-control"
 							rows="5"
 							placeholder="type message here"
-							value={message}
-							onChange={(e) => setMessage(e.target.value)}
-							required
+							value={formDetails.message}
+							onChange={handleChange("message")}
 							minLength="4"
+							required
 						></textarea>
 					</div>
 					<button type="submit">Submit</button>

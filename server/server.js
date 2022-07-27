@@ -1,27 +1,31 @@
 const express = require("express");
 const cors = require("cors");
+
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-const contactMessage = {
-	id: 0,
-	name: "Bart Simpson",
-	email: "bart@springfield.com",
-	message: "Eat my shorts!",
-};
+//const contactMessage = [{}];
 
 const emails = require("./emails.json");
+const contactMessages = require("./contactMessages.json");
 
 const port = parseInt(process.env.PORT || "3000");
 
 app.get("/", function (req, res) {
-	res.json("Hello World");
+	res.send(contactMessages);
 });
 
 app.post("/api/new-contact", function (req, res) {
-	res.json(contactMessage);
+	const { name, email, message } = req.body;
+
+	contactMessages.push({
+		name,
+		email,
+		message,
+	});
+	res.status(200).json(contactMessages);
 });
 
 app.get("/api/email", (req, res) => {
@@ -32,10 +36,10 @@ app.post("/api/email", (req, res) => {
 	let emailsList = req.body;
 	let newEmail = req.body.email;
 	emails.push({
-		"email": newEmail
+		"email": newEmail,
 	});
 	res.send(emailsList).status(200);
-})
+});
 
 app.listen(port, () => {
 	console.log(`http://localhost:${port}`);
