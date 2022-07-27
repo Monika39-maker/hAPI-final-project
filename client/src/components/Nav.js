@@ -4,13 +4,13 @@ export default function Nav() {
   return (
 		<nav>
 			<li>
-				<a href="/Home">Home</a>
+				<a href="/">Home</a>
 			</li>
 			<li>
 				<a href="/About">About</a>
 			</li>
 			<li>
-				<a href="/Home">
+				<a href="/">
           {/* src needs to be fetched from database  */}
 					<img className="logo" src="https://www.pratibhanakshatra.org/public/storage/setting/1594904931pratibha.jpg" />
 				</a>
