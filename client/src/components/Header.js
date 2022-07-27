@@ -1,15 +1,12 @@
 import React from "react";
 import Nav from "./Nav";
+import "../App.css";
 
 function Header() {
   return (
-    <div>
-        <img src="https://www.pratibhanakshatra.org/public/storage/setting/1594904931pratibha.jpg" alt="logo" />
+    <header>
         <Nav />
-        <div>
-            <a href="https://www.facebook.com/prativanakshatra">Join Us</a>
-        </div>
-    </div>
+    </header>
 
   );
 }
