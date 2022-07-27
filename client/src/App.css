@@ -241,21 +241,42 @@ a {
 /* -----CSS for the stories-------end-------------------- */
 
 .newsletter-box {
+
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 15em;
-  background-color: blue;
+  background-color: var(--story-gold);
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
-.email-form {
-  height: 3
-  em;
+.newsletter-box form {
+  width: 40%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space;
+  align-items: center;
 }
+.newsletter-box input {
+  height: 100%;
+  width: 78%;
+  border: none;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
 
 .signup-button {
-  height: 3em;
+  height: 100%;
+  background: var(--story-blue);
+  border: none;
+  cursor: pointer;
+  color: var(--story-white)
+  /* padding: 15px; */
 }
 
 .image-card {
