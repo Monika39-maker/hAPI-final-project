@@ -1,18 +1,17 @@
 import React from "react";
 import TextHero from "../components/TextHero";
 import Contact from "../Contact";
+import ImageHero from "../components/ImageHero.js";
 
 
 const About = () => {
 	return (
 		<div>
-			{/* image is to be replace with imagehero after solving the width issue  */}
-			<img
-				className="placeholderImg"
-				src="https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/289957088_953273682107894_7744271686326919989_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=BDKIhDQClSwAX-dBj9P&tn=ULLdwlnZTBVRSPJe&_nc_ht=scontent-lhr8-1.xx&oh=00_AT9hCHHNBHf4TSx39lypCRgBlQvOpYByMxJ9jZD1R2DVBg&oe=62E371B8"
-				alt="Placeholder"
+			<ImageHero
+				src="https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/289957088_953273682107894_7744271686326919989_n.jpg?stp=dst-jpg_s526x395&_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=BDKIhDQClSwAX-dBj9P&_nc_ht=scontent-lhr8-1.xx&oh=00_AT-Dz72tKpmHu1XlyQr-YiFWrw0HOY2wFRDSnAwsT6edGw&oe=62E56BF8"
+				title="About Us"
 			/>
-      <TextHero
+			<TextHero
 				subtitle="In this subtitle you can write a longer text"
 				title="Something about us"
 				variant="red"
