@@ -48,7 +48,15 @@ if (submitted) {
 		<>
 			<div>Contact us</div>
 			<div>
+<<<<<<< HEAD
 				<form id="contact-form" onSubmit={submitForm}>
+=======
+				<form
+					id="contact-form"
+					onSubmit={submitForm}
+					// method="POST"
+				>
+>>>>>>> main
 					<div className="form-group">
 						<label htmlFor="name">Name: </label>
 						<input
@@ -56,8 +64,13 @@ if (submitted) {
 							name="name"
 							className="form-control"
 							placeholder="type name here"
+<<<<<<< HEAD
 							value={formDetails.name}
 							onChange={handleChange("name")}
+=======
+							value={name}
+							onChange={(e) => setName(e.target.value)}
+>>>>>>> main
 							required
 						/>
 					</div>
@@ -68,8 +81,13 @@ if (submitted) {
 							name="email"
 							placeholder="type email here"
 							className="form-control"
+<<<<<<< HEAD
 							value={formDetails.email}
 							onChange={handleChange("email")}
+=======
+							value={email}
+							onChange={(e) => setEmail(e.target.value)}
+>>>>>>> main
 							required
 						/>
 					</div>
@@ -79,10 +97,17 @@ if (submitted) {
 							className="form-control"
 							rows="5"
 							placeholder="type message here"
+<<<<<<< HEAD
 							value={formDetails.message}
 							onChange={handleChange("message")}
 							minLength="4"
 							required
+=======
+							value={message}
+							onChange={(e) => setMessage(e.target.value)}
+							required
+							minLength="4"
+>>>>>>> main
 						></textarea>
 					</div>
 					<button type="submit">Submit</button>

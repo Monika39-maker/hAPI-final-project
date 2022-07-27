@@ -1,3 +1,11 @@
+:root {
+    --story-blue: #171740;
+    --story-red: rgb(213, 30, 81);
+    --story-gold: #FCAF3B;
+    --story-white: #FFF;
+    --story-green: #88da62;
+}
+
 .placeholderImg {
   width: 100%;
 }
@@ -29,4 +37,204 @@
   height: 3em;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+/* ------------CSS for the stories---start---------- */
+/* common  */
+.text-hero-red, .text-hero-yellow, .text-hero-blue {
+  width: 100%;
+  height: auto;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-hero-title-red, .text-hero-title-yellow, .text-hero-title-blue {
+  font-size: 1.5em;
+}
+.text-hero-subtitle-red, .text-hero-subtitle-yellow, .text-hero-subtitle-blue {
+    font-size: 0.9em;
+    width: 300px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+.text-hero-button-red, .text-hero-button-yellow, .text-hero-button-blue {
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* title only  */
+.text-hero-title-only {
+  background: #FCAF3B;
+  color: var(--story-blue);
+  font: 1em sans-serif;
+  width: 20vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* RED  */
+.text-hero-red {
+  background: var(--story-red);  
+}
+
+.text-hero-title-red {
+  color: var(--story-gold); 
+}
+
+.text-hero-subtitle-red {
+  color: var(--story-white);
+ 
+}
+
+.text-hero-button-red {
+  background: var(--story-blue);
+  color: var(--story-white);
+}
+
+/* Yellow  */
+.text-hero-yellow {
+  background: var(--story-gold);
+
+}
+
+.text-hero-title-yellow {
+  color: var(--story-blue);
+  font-size: 1.5em;
+}
+
+.text-hero-subtitle-yellow {
+  color: var(--story-blue);
+  
+}
+
+.text-hero-button-yellow {
+  background: var(--story-blue);
+  color: var(--story-white);
+}
+
+/* Blue  */
+.text-hero-blue {
+  background: var(--story-blue);
+
+}
+
+.text-hero-title-blue {
+  color: var(--story-gold);
+  font-size: 1.5em;
+}
+
+.text-hero-subtitle-blue {
+  color: var(--story-white); 
+}
+
+.text-hero-button-blue {
+  background: var(--story-gold);
+  color: var(--story-blue);
+}
+
+/* videohero  */
+
+
+/* Add some content at the bottom of the video/page */
+
+.video-hero-text-overlay {
+  position: absolute;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+  
+  /* transform: translate(-30%, 30%); */
+  /* margin-left: 5%; */
+  
+ 
+}
+.video {
+  /* margin-left: auto; */
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+.video-hero-text-overlay p{
+  margin-left: auto;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  overflow-wrap: break-word;
+  width: 50%;
+  height: 100%;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  /* z-index: 6; */
+}
+.video-hero-text-overlay h3{
+  position: sticky;
+  bottom: 0;
+  padding: 15px 0 15px 0;
+  overflow-wrap: break-word;
+  width: 100%;
+  /* height: 100px; */
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  background: var(--story-blue);
+  /* padding: 5%; */
+
+  /* z-index: 6; */
+}
+
+.image-hero {
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--story-gold)
+}
+
+
+/* -----CSS for the stories-------end-------------------- */
+
+.newsletter-box {
+  display: flex;
+  flex-direction: column;
+  height: 15em;
+  background-color: blue;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.email-form {
+  height: 3
+  em;
+}
+
+.signup-button {
+  height: 3em;
+}
+
+.image-card {
+  background: var(--story-gold);
+  width: 20%;
+  height: auto;
+  text-align: center;
+  padding: 5px;
+  color: var(--story-white)
+}
+
+.image-card img{
+  width: 90%;
+  height: 80%;
 }

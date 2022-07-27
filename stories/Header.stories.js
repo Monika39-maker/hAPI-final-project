@@ -1,16 +1,11 @@
-import Header from '../client/header.js';
-// import Navbar from "../client/nav.js"
+import Header from "../client/src/components/Header.js";
 
 export default {
     title: "Components/Header",
-    // component: Header,
-    argTypes: {
-        backgroundColor: {control: 'color'},
-        color: {control: 'color'},
-        padding: {control: "number", defaultValue: "3"}
-    }
+    component: Header,
 };
 
+const Template = () => <Header />;
 
-export const Heading = (args) => (<Header {...args}/>)
-// export const Navbar = (args) => (<Nav {...args}/>)
+export const Default = Template.bind({});
+Default.args = {};

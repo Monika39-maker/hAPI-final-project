@@ -1,14 +1,14 @@
-import Nav from '../client/nav.js'
+// import Nav from '../client/nav.js'
 
-export default {
-    title: "Components/Navbar",
-    component: Nav,
-    argTypes: {
-        backgroundColor: {control: 'color'},
-        color: {control: 'color'},
-        padding: {control: "number", defaultValue: "3"}
-    }
-};
+// export default {
+//     title: "Components/Navbar",
+//     component: Nav,
+//     argTypes: {
+//         backgroundColor: {control: 'color'},
+//         color: {control: 'color'},
+//         padding: {control: "number", defaultValue: "3"}
+//     }
+// };
 
 
-export const Navbar = (args) => (<Nav {...args}/>)
+// export const wide = (args) => (<Nav {...args}/>)
