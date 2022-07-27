@@ -3,27 +3,37 @@ import React, { useState } from "react";
 function Contact() {
 const [submitted, setSubmitted] = useState(false);
 
-const [name, setName] = useState("");
-const [email, setEmail] = useState("");
-const [message, setMessage] = useState("");
+const [formDetails, setFormDetails] =  useState([{
+	name: "",
+	email: "",
+	message: "",
+}]);
 
-const contactInfo = [];
+const handleChange = (input) => (e) => {
+	setFormDetails({ ...formDetails, [input]: e.target.value });
+};
 
-function submitForm(event) {
+
+const submitForm = async(event) => {
 	event.preventDefault();
-	// console.log(name);
-	// console.log(email);
-	// console.log(message);
-	contactInfo.push({ name: name, email: email, message: message });
 
-	console.log(contactInfo);
+	try {
+        const body = formDetails;
 
-	setName("");
-	setEmail("");
-	setMessage("");
+        const response = await fetch("http://localhost:3000/api/new-contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(body),
+        });
+        // window.location="/";
+        // console.log(response);
+    } catch (error) {
+        console.error(error.message);
+    }
 
-	//setSubmitted(true);
-}
+
+    setSubmitted(true);
+};
 
 if (submitted) {
 	return (
@@ -38,11 +48,15 @@ if (submitted) {
 		<>
 			<div>Contact us</div>
 			<div>
+<<<<<<< HEAD
+				<form id="contact-form" onSubmit={submitForm}>
+=======
 				<form
 					id="contact-form"
 					onSubmit={submitForm}
 					// method="POST"
 				>
+>>>>>>> main
 					<div className="form-group">
 						<label htmlFor="name">Name: </label>
 						<input
@@ -50,8 +64,13 @@ if (submitted) {
 							name="name"
 							className="form-control"
 							placeholder="type name here"
+<<<<<<< HEAD
+							value={formDetails.name}
+							onChange={handleChange("name")}
+=======
 							value={name}
 							onChange={(e) => setName(e.target.value)}
+>>>>>>> main
 							required
 						/>
 					</div>
@@ -62,8 +81,13 @@ if (submitted) {
 							name="email"
 							placeholder="type email here"
 							className="form-control"
+<<<<<<< HEAD
+							value={formDetails.email}
+							onChange={handleChange("email")}
+=======
 							value={email}
 							onChange={(e) => setEmail(e.target.value)}
+>>>>>>> main
 							required
 						/>
 					</div>
@@ -73,10 +97,17 @@ if (submitted) {
 							className="form-control"
 							rows="5"
 							placeholder="type message here"
+<<<<<<< HEAD
+							value={formDetails.message}
+							onChange={handleChange("message")}
+							minLength="4"
+							required
+=======
 							value={message}
 							onChange={(e) => setMessage(e.target.value)}
 							required
 							minLength="4"
+>>>>>>> main
 						></textarea>
 					</div>
 					<button type="submit">Submit</button>
