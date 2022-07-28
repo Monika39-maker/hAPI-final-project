@@ -3,10 +3,11 @@ import Nav from "./Nav";
 import "../App.css";
 
 function Header() {
-  return (
-        <Nav />
-  );
+	return (
+		<header>
+			<Nav />
+		</header>
+	);
 }
-
 
 export default Header;
