@@ -12,27 +12,6 @@ const emails = require("./emails.json");
 
 const port = parseInt(process.env.PORT || "3000");
 
-const pool = new Pool({
-	user: "harsheek",
-	host: "localhost",
-	database: "postgres",
-	password: "",
-	port: 5433,
-});
-
-
-
-
-app.get("/api/new-contact", function (req, res) {
-	pool
-		.query("SELECT * FROM contact_messages")
-		.then((result) => res.json(result.rows))
-		.catch((error) => {
-			console.error(error);
-			res.status(500).json(error);
-		});
-});
-
 //Commented out is the code for pushing contact messages to a json file. Now superceded by code pushing contact messages to postgres database
 // app.get("/", function (req, res) {
 // 	res.send(contactMessages);
@@ -48,6 +27,24 @@ app.get("/api/new-contact", function (req, res) {
 // 	});
 // 	res.status(200).json(contactMessages);
 // });
+
+const pool = new Pool({
+	user: "harsheek",
+	host: "localhost",
+	database: "postgres",
+	password: "",
+	port: 5433,
+});
+
+app.get("/api/new-contact", function (req, res) {
+	pool
+		.query("SELECT * FROM contact_messages")
+		.then((result) => res.json(result.rows))
+		.catch((error) => {
+			console.error(error);
+			res.status(500).json(error);
+		});
+});
 
 app.post("/api/new-contact", function (req, res) {
 	const name = req.body.name;
