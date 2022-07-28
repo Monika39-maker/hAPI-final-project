@@ -102,16 +102,23 @@ a {
 
 /* title only  */
 .text-hero-title-only {
-  background: #FCAF3B;
-  color: var(--story-blue);
-  font: 1em sans-serif;
-  width: 20vw;
-  height: 15vw;
+  background: var(--story-white);
+  width: 100%;
+  height: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
+.text-hero-title-title-only {
+  color: var(--story-blue)
+}
+.text-hero-subtitle-title-title-only {
+  font-size: 0.5em;
+  font-weight: 100;
+}
+
 /* RED  */
 .text-hero-red {
   background: var(--story-red);  
@@ -241,21 +248,42 @@ a {
 /* -----CSS for the stories-------end-------------------- */
 
 .newsletter-box {
+
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 15em;
-  background-color: blue;
+  background-color: var(--story-gold);
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
-.email-form {
-  height: 3
-  em;
+.newsletter-box form {
+  width: 40%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space;
+  align-items: center;
 }
+.newsletter-box input {
+  height: 100%;
+  width: 78%;
+  border: none;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
 
 .signup-button {
-  height: 3em;
+  height: 100%;
+  background: var(--story-blue);
+  border: none;
+  cursor: pointer;
+  color: var(--story-white)
+  /* padding: 15px; */
 }
 
 .image-card {
