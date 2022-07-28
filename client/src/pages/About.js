@@ -1,6 +1,6 @@
 import React from "react";
 import TextHero from "../components/TextHero";
-import Contact from "../Contact";
+import Contact from "../components/Contact";
 import ImageHero from "../components/ImageHero.js";
 
 

@@ -50,7 +50,8 @@ header {
   height: 110px;
   width: 100%;
 }
-header nav {
+
+nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
