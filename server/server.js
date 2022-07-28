@@ -7,7 +7,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const emails = require("./emails.json");
+
+const emails = [
+	{
+		email: "name@email.com",
+	},
+];
 //const contactMessages = require("./contactMessages.json");
 
 const port = parseInt(process.env.PORT || "3000");
