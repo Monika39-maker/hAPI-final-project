@@ -20,6 +20,9 @@ const pool = new Pool({
 	port: 5433,
 });
 
+
+
+
 app.get("/api/new-contact", function (req, res) {
 	pool
 		.query("SELECT * FROM contact_messages")
@@ -50,6 +53,10 @@ app.post("/api/new-contact", function (req, res) {
 	const name = req.body.name;
 	const email = req.body.email;
 	const message = req.body.message;
+
+	if ((!name) || (!email) || (!message)) {
+		return res.status(400).send("Please provide all information required.");
+	}
 
 	const query =
 		"INSERT INTO contact_messages (name, email, message) VALUES ($1, $2, $3)";
