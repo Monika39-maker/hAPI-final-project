@@ -8,7 +8,7 @@ const About = () => {
 	return (
 		<div>
 			<ImageHero
-				src="https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/289957088_953273682107894_7744271686326919989_n.jpg?stp=dst-jpg_s526x395&_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=BDKIhDQClSwAX-dBj9P&_nc_ht=scontent-lhr8-1.xx&oh=00_AT-Dz72tKpmHu1XlyQr-YiFWrw0HOY2wFRDSnAwsT6edGw&oe=62E56BF8"
+				src="https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/287314549_5924469944246672_7100867469945541907_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=uIWUb-XJT58AX-4MkgM&_nc_ht=scontent-lhr8-1.xx&oh=00_AT80xcZxikbPPt5UaDb_ZCCLV94ush13T4qEdf9v65IGIA&oe=62E67EA9"
 				title="About Us"
 			/>
 			<TextHero
