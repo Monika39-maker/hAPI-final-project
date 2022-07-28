@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 // import image1 from "../images/PladeholderImage.jpeg";
 
-function VideoHero({ src, height, width, subtitle, textOverlay }) {
+function VideoHero({ src, height, width, textOverlay }) {
   return (
     <div style={{ width:`${width}%`, height:`${height}%` }} className="video-hero-text-overlay">
         <div>
