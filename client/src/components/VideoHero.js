@@ -12,14 +12,7 @@ function VideoHero({ src, height, width, subtitle, textOverlay }) {
             Your browser does not support the video tag.
         </video>
         </div>
-
-
-        {/* <div style={{ width:`${width*0.5}%`, height:"70%" }} className="video-hero-text-overlay"> */}
         <p>{textOverlay}</p>
-        <h3>{subtitle}</h3>
-
-
-
     </div>
   );
 }
