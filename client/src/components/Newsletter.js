@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaInstagramSquare } from "react-icons/fa";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
@@ -16,20 +17,21 @@ const Newsletter = () => {
   };
 
   return (
-    <div>
-      <div className="newsletter-box">
-        <form id="email-form" onSubmit={handleSubmit}>
-          <input
-          className="email-form"
-          placeholder="enter email here"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-          />
-          <button className="signup-button">Sign up for our newsletter!</button>
-        </form>
-      </div>
-    </div>
-  );
+		<div>
+			<div className="newsletter-box">
+				<form id="email-form" onSubmit={handleSubmit}>
+					<input
+						// please delete  className="email-form" if it was only used for css purpose since I have styled the input tag already using different selector
+						// className="email-form"
+						placeholder="Email"
+						value={email}
+						onChange={(event) => setEmail(event.target.value)}
+					/>
+					<button className="signup-button">Register</button>
+				</form>
+			</div>
+		</div>
+	);
 };
 
 export default Newsletter;
