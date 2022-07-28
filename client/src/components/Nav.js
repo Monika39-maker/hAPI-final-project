@@ -11,7 +11,7 @@ export default function Nav() {
 			</li>
 			<li>
 				<a href="/">
-					<img src="https://www.pratibhanakshatra.org/public/storage/setting/1594904931pratibha.jpg" alt="logo" />
+					<img className="logo" src="https://www.pratibhanakshatra.org/public/storage/setting/1594904931pratibha.jpg" alt="logo" />
 				</a>
 			</li>
 			<li>
