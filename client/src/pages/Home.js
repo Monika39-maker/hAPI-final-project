@@ -1,7 +1,7 @@
 import TextHero from "../components/TextHero";
 import Newsletter from "../components/Newsletter";
 import ImageHero from "../components/ImageHero";
-import ImageCard from "../components/ImageCard";
+// import ImageCard from "../components/ImageCard";
 
 
 
