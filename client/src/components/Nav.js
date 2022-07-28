@@ -7,20 +7,24 @@ export default function Nav() {
 				<a href="/">Home</a>
 			</li>
 			<li>
-				<a href="/About">About</a>
+				<a href="/about">About</a>
 			</li>
 			<li>
 				<a href="/">
-          {/* src needs to be fetched from database  */}
-					<img className="logo" src="https://www.pratibhanakshatra.org/public/storage/setting/1594904931pratibha.jpg" />
+					<img src="https://www.pratibhanakshatra.org/public/storage/setting/1594904931pratibha.jpg" />
 				</a>
 			</li>
 			<li>
-        {/* href to be changed to other source  */}
-				<a href="https://www.pratibhanakshatra.org/event-list">Events</a>
+				<a
+					href="https://www.facebook.com/prativanakshatra"
+					target="_blank"
+					rel="noreferrer"
+				>
+					Events
+				</a>
 			</li>
 			<li>
-				<a href="/Donate">Donate</a>
+				<a href="/donations">Donate</a>
 			</li>
 		</nav>
 	);

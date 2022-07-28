@@ -25,12 +25,9 @@ const submitForm = async(event) => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(body),
         });
-        // window.location="/";
-        // console.log(response);
     } catch (error) {
         console.error(error.message);
     }
-
 
     setSubmitted(true);
 };
