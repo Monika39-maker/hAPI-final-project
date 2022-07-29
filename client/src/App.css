@@ -106,16 +106,17 @@ footer > nav img {
 
 .text-hero-title-red, .text-hero-title-yellow, .text-hero-title-blue {
   font-size: 1.5em;
+  padding: 0px 100px;
 }
 .text-hero-subtitle-red, .text-hero-subtitle-yellow, .text-hero-subtitle-blue {
-    font-size: 0.9em;
-    width: 300px;
+    font-size: 1em;
+    width: 70%;
     text-align: center;
     overflow-wrap: break-word;
 }
 .text-hero-button-red, .text-hero-button-yellow, .text-hero-button-blue {
   height: 1.5em;
-  width: 10em;
+  width: 5em;
   padding: 5px;
   border-radius: 6px;
   font-size: 2em;
@@ -142,6 +143,10 @@ footer > nav img {
 .text-hero-subtitle-title-title-only {
   font-size: 0.5em;
   font-weight: 100;
+}
+
+.text-hero-subtitle-title-only {
+  padding:10px 10% 0px 10%;
 }
 
 /* RED  */
