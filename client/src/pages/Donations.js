@@ -10,15 +10,16 @@ const Donations = () => {
 				title="Our Charity Work"
 			/>
 			<TextHero
-				buttonText="Thank you so much"
+				buttonText="Donate"
 				link="//widgets.justgiving.com/Button/Redirect?p=eyJUZXh0IjoiQ29kZSBZb3VyIEZ1dHVyZSIsIklkIjoiN2I4MDA2YjQtZjk2OC00NDdjLTk1NDEtMDA3MTg3MTkxZTU3IiwiQ2hhcml0eUlkIjoyNzg4NDg3LCJTaXplIjoibCIsIlJlZmVyZW5jZSI6IjEyMyIsIlR5cGUiOiJDaGFyaXR5RG9uYXRlIn0="
-				title="Thank you for considering donating to our organisation.
-        Your contribution will allow us to continue to fund events, and to provide cultural spaces for our members, and the wider community to gather, and celebrate Nepalese culture.
-        If you would like to donate to us directly, you can make a donation to the following account:
-        Pratibha Nakshatra
-        Account number: 12345678
-        Sort Code: 12-34-56
-        Alternatively, you can also donate to us via Just Giving - click the button below to be taken to their website."
+				title="Donate"
+				subtitle1="Thank you for considering donating to our organisation.
+        Your contribution will allow us to continue to fund events, and to provide cultural spaces for our members, and the wider community to gather, and celebrate Nepalese culture. If you would like to donate to us directly, you can make a donation to the following account."
+
+        subtitle2="Pratibha Nakshatra"
+		subtitle3="Account number: 12345678. Sort Code: 12-34-56"
+
+		subtitle4= "Alternatively, you can also donate to us via Just Giving - click the button below to be taken to their website."
 				variant="yellow"
 			/>
 			<img
