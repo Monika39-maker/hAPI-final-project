@@ -10,7 +10,7 @@ export function Home() {
 	return (
 		<main role="main">
 			<VideoHero
-				src="http://localhost:3000/public/videohero.mp4"
+				src="http://localhost:3100/public/videohero.mp4"
 				height="50"
 				width="100"
 				textOverlay="Pratibha Nakshatra"
