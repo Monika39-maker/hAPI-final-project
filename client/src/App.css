@@ -1,5 +1,6 @@
 :root {
-    --story-blue: #171740;
+    --story-blue: #003893;
+;
     --story-red: rgb(213, 30, 81);
     --story-gold: #FCAF3B;
     --story-white: #FFF;
@@ -87,6 +88,21 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+footer {
+  background: var(--story-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+footer > nav img { 
+  display: none;
 }
 
 .text-hero-title-red, .text-hero-title-yellow, .text-hero-title-blue {
