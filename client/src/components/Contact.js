@@ -35,55 +35,61 @@ const submitForm = async(event) => {
 if (submitted) {
 	return (
 		<>
-			<div>Thank you!</div>
-			<div>We'll be in touch soon.</div>
+			<div className="contact">
+				<div className="contact-message-received">
+					<h2>Thank you!</h2>
+					<h2>We'll be in touch soon.</h2>
+				</div>
+			</div>
 		</>
 	);
 }
 
 	return (
 		<>
-			<div>Contact us</div>
-			<div>
-				<form id="contact-form" onSubmit={submitForm}>
-					<div className="form-group">
-						<label htmlFor="name">Name: </label>
-						<input
-							type="text"
-							name="name"
-							className="form-control"
-							placeholder="type name here"
-							value={formDetails.name}
-							onChange={handleChange("name")}
-							required
-						/>
-					</div>
-					<div className="form-group">
-						<label htmlFor="email">Email address: </label>
-						<input
-							type="email"
-							name="email"
-							placeholder="type email here"
-							className="form-control"
-							value={formDetails.email}
-							onChange={handleChange("email")}
-							required
-						/>
-					</div>
-					<div className="form-group">
-						<label htmlFor="message">Message: </label>
-						<textarea
-							className="form-control"
-							rows="5"
-							placeholder="type message here"
-							value={formDetails.message}
-							onChange={handleChange("message")}
-							minLength="4"
-							required
-						></textarea>
-					</div>
-					<button type="submit">Submit</button>
-				</form>
+			<div className="contact">
+				<h2>Contact us</h2>
+				<div>
+					<form id="contact-form" onSubmit={submitForm}>
+						<div className="form-group">
+							<label htmlFor="name">Name: </label>
+							<input
+								type="text"
+								name="name"
+								className="form-control"
+								placeholder="type name here"
+								value={formDetails.name}
+								onChange={handleChange("name")}
+								required
+							/>
+						</div>
+						<div className="form-group">
+							<label htmlFor="email">Email address: </label>
+							<input
+								type="email"
+								name="email"
+								placeholder="type email here"
+								className="form-control"
+								value={formDetails.email}
+								onChange={handleChange("email")}
+								required
+							/>
+						</div>
+						<div className="form-group">
+							<label htmlFor="message">Message: </label>
+							<textarea
+								className="form-control"
+								rows="5"
+								placeholder="type message here"
+								value={formDetails.message}
+								onChange={handleChange("message")}
+								minLength="4"
+								required
+							></textarea>
+						</div>
+						<button type="submit">Submit</button>
+					</form>
+				</div>
 			</div>
 		</>
 	);
