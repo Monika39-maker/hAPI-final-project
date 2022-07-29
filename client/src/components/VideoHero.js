@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 // import image1 from "../images/PladeholderImage.jpeg";
 
-function VideoHero({ src, height, width, subtitle, textOverlay }) {
+function VideoHero({ src, height, width, textOverlay }) {
   return (
     <div style={{ width:`${width}%`, height:`${height}%` }} className="video-hero-text-overlay">
         <div>
@@ -12,14 +12,7 @@ function VideoHero({ src, height, width, subtitle, textOverlay }) {
             Your browser does not support the video tag.
         </video>
         </div>
-
-
-        {/* <div style={{ width:`${width*0.5}%`, height:"70%" }} className="video-hero-text-overlay"> */}
         <p>{textOverlay}</p>
-        <h3>{subtitle}</h3>
-
-
-
     </div>
   );
 }
