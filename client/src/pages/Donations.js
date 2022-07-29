@@ -10,7 +10,7 @@ const Donations = () => {
 				title="Our Charity Work"
 			/>
 			<TextHero
-				buttonText="Donate"
+				buttonText="Thank you so much"
 				link="//widgets.justgiving.com/Button/Redirect?p=eyJUZXh0IjoiQ29kZSBZb3VyIEZ1dHVyZSIsIklkIjoiN2I4MDA2YjQtZjk2OC00NDdjLTk1NDEtMDA3MTg3MTkxZTU3IiwiQ2hhcml0eUlkIjoyNzg4NDg3LCJTaXplIjoibCIsIlJlZmVyZW5jZSI6IjEyMyIsIlR5cGUiOiJDaGFyaXR5RG9uYXRlIn0="
 				title="Thank you for considering donating to our organisation.
         Your contribution will allow us to continue to fund events, and to provide cultural spaces for our members, and the wider community to gather, and celebrate Nepalese culture.
