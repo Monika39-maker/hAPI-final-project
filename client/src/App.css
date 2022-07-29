@@ -114,11 +114,15 @@ footer > nav img {
     overflow-wrap: break-word;
 }
 .text-hero-button-red, .text-hero-button-yellow, .text-hero-button-blue {
+  height: 1.5em;
+  width: 10em;
   padding: 5px;
   border-radius: 6px;
-  font-size: 1em;
+  font-size: 2em;
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 /* title only  */

@@ -23,7 +23,7 @@ const Newsletter = () => {
 					<input
 						// please delete  className="email-form" if it was only used for css purpose since I have styled the input tag already using different selector
 						// className="email-form"
-						placeholder="Email"
+						placeholder="Join Our Mailing List!"
 						value={email}
 						onChange={(event) => setEmail(event.target.value)}
 					/>
