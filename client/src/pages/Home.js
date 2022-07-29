@@ -10,7 +10,7 @@ export function Home() {
 	return (
 		<main role="main">
 			<VideoHero
-				src="https://pratibha-nakshtra.s3.eu-west-2.amazonaws.com/videohero.mp4"
+				src="https://player.vimeo.com/progressive_redirect/playback/694704491/rendition/360p?loc=external&oauth2_token_id=1027659655&signature=6f4425e6cbc3e6c9dfe7a01f60ab993bcf297393152794a8aa9f409173b78244"
 				height="50"
 				width="100"
 				textOverlay="Pratibha Nakshatra"
