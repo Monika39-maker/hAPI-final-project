@@ -13,11 +13,11 @@ app.use("/public", express.static(path.join(__dirname, "public")));
 const port = parseInt(process.env.PORT || "3000");
 
 const pool = new Pool({
-	user: "harsheek",
-	host: "localhost",
-	database: "postgres",
-	password: "",
-	port: 5433,
+	user: "ybjinanpzuquaf",
+	host: "ec2-52-48-159-67.eu-west-1.compute.amazonaws.com",
+	database: "dcttp8adjf62fm",
+	password: "93810d7fa09630dc6fbbf91cccd83194442f584b8b41990b07764659ce4e447a",
+	port: 5432,
 });
 
 app.get("/api/new-contact", function (req, res) {
