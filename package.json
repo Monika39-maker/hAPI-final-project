@@ -1,9 +1,12 @@
 {
+  "home":"http://Monika39-maker.github.io/hAPI-final-project",
   "name": "starter-kit",
   "version": "0.0.1",
   "description": "Starter kit for full-stack JavaScript projects",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -g build",
     "prebuild": "npm run cleanup",
     "build": "npm run build:server && npm run build:client",
     "build:client": "webpack --config client/webpack/prod.config.js",
@@ -62,6 +65,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-storybook": "^0.6.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "html-webpack-tags-plugin": "^3.0.2",
     "nodemon": "^2.0.19",
