@@ -3,7 +3,7 @@
   "name": "starter-kit",
   "version": "0.0.1",
   "description": "Starter kit for full-stack JavaScript projects",
-  "private": true,
+  "private": false,
   "scripts": {
     "prebuild": "npm run cleanup",
     "build": "npm run build:server && npm run build:client",
