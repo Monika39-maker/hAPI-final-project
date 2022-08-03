@@ -1,12 +1,10 @@
 {
-  "home":"http://Monika39-maker.github.io/hAPI-final-project",
+  "homepage":"http://Monika39-maker.github.io/hAPI-final-project",
   "name": "starter-kit",
   "version": "0.0.1",
   "description": "Starter kit for full-stack JavaScript projects",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -g build",
     "prebuild": "npm run cleanup",
     "build": "npm run build:server && npm run build:client",
     "build:client": "webpack --config client/webpack/prod.config.js",
@@ -35,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/textbook/starter-kit/issues"
   },
-  "homepage": "https://github.com/textbook/starter-kit#readme",
+  
   "devDependencies": {
     "@babel/cli": "^7.17.0",
     "@babel/core": "^7.17.0",
