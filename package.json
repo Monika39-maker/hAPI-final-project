@@ -1,5 +1,4 @@
 {
-  "home":"http://Monika39-maker.github.io/hAPI-final-project",
   "name": "starter-kit",
   "version": "0.0.1",
   "description": "Starter kit for full-stack JavaScript projects",
@@ -35,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/textbook/starter-kit/issues"
   },
-  "homepage": "https://github.com/textbook/starter-kit#readme",
+  "homepage": "http://.",
   "devDependencies": {
     "@babel/cli": "^7.17.0",
     "@babel/core": "^7.17.0",
