@@ -5,8 +5,6 @@
   "description": "Starter kit for full-stack JavaScript projects",
   "private": true,
   "scripts": {
-    "redeploy": "npm run build",
-    "deploy": "gh-pages -g build",
     "prebuild": "npm run cleanup",
     "build": "npm run build:server && npm run build:client",
     "build:client": "webpack --config client/webpack/prod.config.js",
@@ -23,7 +21,9 @@
     "lint:fix": "npm run lint:eslint -- --fix && npm run lint:prettier -- --write",
     "lint:prettier": "prettier .",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -g build"
   },
   "repository": {
     "type": "git",
