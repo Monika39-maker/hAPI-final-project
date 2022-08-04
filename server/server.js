@@ -18,7 +18,7 @@ const pool = new Pool({
 	database: "dcttp8adjf62fm",
 	password: "93810d7fa09630dc6fbbf91cccd83194442f584b8b41990b07764659ce4e447a",
 	port: 5432,
-	ssl: { rejectUnauthorized:false },
+	ssl: { rejectUnauthorized:true },
 });
 
 app.get("/api/new-contact", function (req, res) {
