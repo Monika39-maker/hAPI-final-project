@@ -52,15 +52,18 @@ app.post("/api/new-contact", function (req, res) {
 		});
 });
 
-app.get("/api/email", function (req, res) {
-	pool
-		.query("SELECT * FROM mailing_list")
-		.then((result) => res.json(result.rows))
-		.catch((error) => {
-			console.error(error);
-			res.status(500).json(error);
-		});
-});
+app.get(
+	"https://pratibha-nakshtra.herokuapp.com/api/email",
+	function (req, res) {
+		pool
+			.query("SELECT * FROM mailing_list")
+			.then((result) => res.json(result.rows))
+			.catch((error) => {
+				console.error(error);
+				res.status(500).json(error);
+			});
+	}
+);
 
 app.post("/api/email", function (req, res) {
 	const email = req.body.email;
