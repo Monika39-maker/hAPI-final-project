@@ -14,7 +14,7 @@ const port = parseInt(process.env.PORT || "3000");
 // process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 const pool = new Pool({
 	user: "mvaqslndedwcck",
-	host: "ec2-52-48-159-67.eu-west-1.compute.amazonaws.com",
+	host: "ec2-54-155-110-181.eu-west-1.compute.amazonaws.com",
 	database: "dc31lff48akss8",
 	password: "0f55dd3f03f02c8e91ce39672fccd875c4c66a7e8b2cd0710aca06499162c4f9",
 	port: 5432,
