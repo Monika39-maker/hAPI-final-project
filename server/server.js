@@ -13,10 +13,10 @@ app.use("/public", express.static(path.join(__dirname, "public")));
 const port = parseInt(process.env.PORT || "3000");
 // process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 const pool = new Pool({
-	user: "ybjinanpzuquaf",
+	user: "mvaqslndedwcck",
 	host: "ec2-52-48-159-67.eu-west-1.compute.amazonaws.com",
-	database: "dcttp8adjf62fm",
-	password: "93810d7fa09630dc6fbbf91cccd83194442f584b8b41990b07764659ce4e447a",
+	database: "dc31lff48akss8",
+	password: "0f55dd3f03f02c8e91ce39672fccd875c4c66a7e8b2cd0710aca06499162c4f9",
 	port: 5432,
 	ssl: {
 		rejectUnauthorized: false,
