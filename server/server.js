@@ -53,7 +53,7 @@ app.post("/api/new-contact", function (req, res) {
 });
 
 app.get(
-	"https://pratibha-nakshtra.herokuapp.com/api/email",
+	"/api/email",
 	function (req, res) {
 		pool
 			.query("SELECT * FROM mailing_list")
