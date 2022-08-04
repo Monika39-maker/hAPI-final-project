@@ -7,13 +7,13 @@ const Newsletter = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch("http://localhost:3100/api/email", {
-      method: "post",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ "email": email }),
-    }).then(() => {
-      console.log(`${email} has been added to mailing list`);
-    });
+    fetch("https://pratibha-nakshtra.herokuapp.com/api/email", {
+			method: "post",
+			headers: { "Content-Type": "application/json" },
+			body: JSON.stringify({ email: email }),
+		}).then(() => {
+			console.log(`${email} has been added to mailing list`);
+		});
   };
 
   return (
