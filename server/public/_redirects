@@ -1,8 +1,10 @@
 
 # Redirects from what the browser requests to what we serve
-/donations             /donations
+
+/* /index.html 200
+<!-- /donations             /donations
 
 /about              /about
 /cuties            https://www.petsofnetlify.com
-   
+    -->
 
