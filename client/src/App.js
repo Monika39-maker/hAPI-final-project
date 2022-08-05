@@ -1,4 +1,4 @@
-import { Route, Routes, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import About from "./pages/About";
 import Donations from "./pages/Donations";
@@ -10,12 +10,12 @@ import Footer from "./components/Footer";
 const App = () => (
 	<>
 		<Header />
-		<Switch>
-			<Route path="/" exact component={<Home />} />
-			<Route path="/about" exact component={<About />} />
-			<Route path="/donations" exact component={<Donations />} />
-			<Route path="/thank-you" component={<ThankYou /> }  />
-		</Switch>
+		<Routes>
+			<Route path="/" element={<Home />} />
+			<Route path="/about" element={<About />} />
+			<Route path="/donations" element={<Donations />} />
+			<Route path="/thank-you" element={<ThankYou /> }  />
+		</Routes>
 		<Footer />
 	</>
 );
