@@ -20,11 +20,14 @@ const submitForm = async(event) => {
 	try {
         const body = formDetails;
 
-        const response = await fetch("http://localhost:3000/api/new-contact", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(body),
-        });
+        const response = await fetch(
+					"https://pratibha-nakshtra.herokuapp.com/api/new-contact",
+					{
+						method: "POST",
+						headers: { "Content-Type": "application/json" },
+						body: JSON.stringify(body),
+					}
+				);
     } catch (error) {
         console.error(error.message);
     }
