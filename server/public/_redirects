@@ -1,0 +1,6 @@
+/* /index.html 200
+# Redirects from what the browser requests to what we serve
+/donations             /donations
+
+/about              /about
+/cuties            https://www.petsofnetlify.com
