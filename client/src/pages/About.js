@@ -2,13 +2,14 @@ import React from "react";
 import TextHero from "../components/TextHero";
 import Contact from "../components/Contact";
 import ImageHero from "../components/ImageHero.js";
+import image from "../images/pratibha3.jpg";
 
 
 const About = () => {
 	return (
 		<div>
 			<ImageHero
-				src="https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/287314549_5924469944246672_7100867469945541907_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=uIWUb-XJT58AX-4MkgM&_nc_ht=scontent-lhr8-1.xx&oh=00_AT80xcZxikbPPt5UaDb_ZCCLV94ush13T4qEdf9v65IGIA&oe=62E67EA9"
+				src={image}
 				title="About Us"
 			/>
 			<TextHero

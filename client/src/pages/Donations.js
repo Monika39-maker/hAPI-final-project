@@ -1,13 +1,14 @@
 import React from "react";
 import ImageHero from "../components/ImageHero.js";
 import TextHero from "../components/TextHero.js";
+import image from "../images/pratibha18.jpg";
 
 const Donations = () => {
 
   return (
 		<div className="Container">
 			<ImageHero
-				src="https://www.pratibhanakshatra.org/public/storage/gallery/1595692330gal5.png"
+				src={image}
 				title="Our Charity Work"
 			/>
 			<TextHero
