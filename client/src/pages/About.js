@@ -2,7 +2,7 @@ import React from "react";
 import TextHero from "../components/TextHero";
 import Contact from "../components/Contact";
 import ImageHero from "../components/ImageHero.js";
-import image from "../images/pratibha3.jpg";
+import image from "../images/homepage-image.jpeg";
 
 
 const About = () => {

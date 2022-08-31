@@ -1,7 +1,7 @@
 import TextHero from "../components/TextHero";
 import Newsletter from "../components/Newsletter";
 import ImageHero from "../components/ImageHero";
-// import ImageCard from "../components/ImageCard";
+import image from "../images/pratibha3.jpg";
 import VideoHero from "../components/VideoHero";
 
 
@@ -23,7 +23,7 @@ export function Home() {
 
 			<Newsletter />
 			<ImageHero
-				src="https://scontent-lhr8-1.xx.fbcdn.net/v/t1.6435-9/118530683_529758901126043_4998365702785108735_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_ohc=fKVAXPpGIvgAX98uX4f&_nc_ht=scontent-lhr8-1.xx&oh=00_AT_0m5ob03VSJYP_ULc5xNA8BfdJ1Y0FWS8DX5EumqDfRQ&oe=6306773A"
+				src={image}
 				title="Star Talent"
 			/>
 			<TextHero
